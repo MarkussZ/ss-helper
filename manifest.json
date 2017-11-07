@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+
+    "name": "SS helper",
+    "description": "Helper for ss.com",
+    "version": "1.0",
+    "content_scripts": [ {
+        "matches": [
+            "https://www.ss.com/*",
+            "http://www.ss.com/*",
+            "http://ss.com/*",
+            "https://ss.com/*",
+            "https://www.ss.lv/*",
+            "http://www.ss.lv/*",
+            "https://ss.lv/*",
+            "http://ss.lv/*"
+        ],
+        "js": ["jquery-3.2.1.slim.min.js", "content.js"]
+    } ]
+}
